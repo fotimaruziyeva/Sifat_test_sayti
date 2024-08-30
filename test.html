@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/test.css">
+</head>
+<body>
+    
+        
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">Bosh sahifa</a></li>
+            <li><a href="test.html">Test</a></li>
+            <li><a href="amaliy.html">Amaliy topshiriq</a></li>
+            <li><a href="register.html" class="nav-btn btn">Ro'yxatdan o'tish</a></li>
+        </ul>
+        <ul>
+          <li class="hideOnMobile"><a href="index.html">Bosh sahifa</a></li>
+            <li class="hideOnMobile"><a href="test.html">Test</a></li>
+            <li class="hideOnMobile"><a href="amaliy.html">Amaliy topshiriq</a></li>
+            <li class="hideOnMobile"><a href="register.html" class="nav-btn btn">Ro'yxatdan o'tish</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#5f6368"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <div class="container">
+            <section class="quiz-section">
+                <div class="quiz-box">
+                    <h1>Quiz</h1>
+                        <div class="quiz-header">
+                            <span>Quiz</span>
+                            <span class="header-score">Score: 0 / 5</span>
+                        </div>
+                    <h2 class="question-text">HTML ni kengaytmasi</h2>
+                    <div class="option-list">
+                         <!-- Javoblar -->
+                      
+                    </div>
+                    <div class="quiz-footer">
+                        <span class="question-total">1 of 5 questions</span>
+                        <button class="next-btn">Next</button>
+                    </div>
+                </div>
+                <div class="result-box">
+                    <h2>Quiz Result!</h2>
+                    <div class="percentage-container">
+                        <div class="circular-progress">
+                            <span class="progress-value">0%</span>
+                        </div> 
+                        <span class="score-text">Your Score 0 out of 5</span>
+                    </div>
+                    <div class="buttons">
+                        <button class="goHome-btn"><a href="index.html">Go to Home</a></button>
+                    </div>
+                </div>
+            </section>
+            <section class="home">
+              <div class="home-content">
+                <h1>Quiz Website</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa commodi et iste ullam ab provident neque quisquam eius voluptate unde inventore, dolorum beatae enim animi dignissimos non architecto rerum autem fuga doloremque impedit itaque quo! Consectetur neque placeat quibusdam.</p>
+                     <button class="start-btn">Start Quiz</button>
+                 </div>
+          </section>
+     </div>
+    </main>
+<div class="popup-info">
+    <h2>Quiz Guide</h2>
+    <span class="info">1.Lorem ipsum, dolor sit amet consectetur .</span>
+    <span class="info">2.Lorem ipsum, dolor sit .</span>
+    <span class="info">3.Lorem ipsum, dolor sit amet consectetur adipisicing.</span>
+    <span class="info">4.Lorem ipsum, dolor sit amet .</span>
+    <span class="info">5.Lorem ipsum, dolor sit amet consectetur adipisicing.</span>
+
+<div class="btn-group">
+    <button class="info-btn  exit-btn">Exit Quiz</button>
+    <a href="#" class="info-btn  continue-btn">Continue</a>
+</div>
+</div>
+<script src="./js/question.js"></script>
+<script src="./js/scripts.js"></script>
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+    
+</script>
+</body>
+</html>

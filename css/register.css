@@ -128,18 +128,17 @@ nav ul li a::after {
     margin-top: 3%;
 }
 main{
-   display: flex;
+    display: flex;
     align-items: center;
     flex-direction: column;
     max-width: 35rem;
-    width: 60%;
+    width: 38%;
     border-radius: 10px;
     border: 2px solid white;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
-    
     font-size: 1rem;
     margin-block: 1rem;
-    height: 35rem;
+    height: 38rem;
     overflow: hidden;
     position: relative;
 }

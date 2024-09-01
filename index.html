@@ -24,10 +24,30 @@
             </ul>
         </nav>
         <br><br><br>
-        <div class="container">
-            <img src="./img/photo_2024-07-10_23-09-37-removebg-preview.png" alt="Background Image">
-        </div>
-      
+        <video autoplay muted loop id="myVideo">
+            <source src="./SIFAT LOGO INTRO.mp4" type="video/mp4">
+            Sizning brauzeringiz bu videoni qo'llab-quvvatlamaydi.
+        </video>
+            <style>
+                .video-background {
+                    position: relative;
+                    height: 100vh;
+                    overflow: hidden;
+                }
+                
+                #myVideo {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    min-width: 100%;
+                    min-height: 100%;
+                    width: auto;
+                    height: auto;
+                    z-index: -1;
+                    transform: translate(-50%, -50%);
+                    background-size: cover;
+                }
+            </style>
     <script src="js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

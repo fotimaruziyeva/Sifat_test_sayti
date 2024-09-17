@@ -17,6 +17,11 @@
                 <li><a href="register.html" class="nav-btn btn">Ro'yxatdan o'tish</a></li>
             </ul>
             <ul>
+                <div class="logo">
+                    <a href="#">
+                      <img src="./img/logo_white.png" alt="logo">
+                    </a>
+                  </div>
                 <li class="hideOnMobile"><a href="test.html">Test</a></li>
                 <li class="hideOnMobile"><a href="amaliy.html">Amaliy topshiriq</a></li>
                 <li class="hideOnMobile"><a href="register.html" class="nav-btn btn">Ro'yxatdan o'tish</a></li>
@@ -28,27 +33,25 @@
             <source src="./SIFAT LOGO INTRO.mp4" type="video/mp4">
             Sizning brauzeringiz bu videoni qo'llab-quvvatlamaydi.
         </video>
-            <style>
-                .video-background {
-                    position: relative;
-                    height: 100vh;
-                    overflow: hidden;
-                }
-                
-                #myVideo {
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    min-width: 100%;
-                    min-height: 100%;
-                    width: auto;
-                    height: auto;
-                    z-index: -1;
-                    transform: translate(-50%, -50%);
-                    background-size: cover;
-                }
-            </style>
-
+        
+        <style>
+            .video-background {
+                position: relative;
+                overflow: hidden;
+            }
+            
+            #myVideo {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 100vw; /* Ekran kengligiga mos */
+                height: 100vh; /* Ekran balandligiga mos */
+                object-fit: cover; /* Videoni ekranga to'liq joylashtirish */
+                z-index: -1;
+                transform: translate(-50%, -50%);
+            }
+        </style>
+        
     <script src="js/script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

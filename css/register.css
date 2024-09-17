@@ -131,8 +131,8 @@ main{
     display: flex;
     align-items: center;
     flex-direction: column;
-    max-width: 35rem;
-    width: 38%;
+    max-width: 45rem;
+    width: 39%;
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.5);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.6);
